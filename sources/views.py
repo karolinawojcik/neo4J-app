@@ -1,6 +1,6 @@
 # coding=UTF-8
 from flask import Flask, request, session, redirect, url_for, render_template, flash
-from models import User, get_shops, get_clients, get_workers
+from .models import User, get_shops, get_clients, get_workers
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
