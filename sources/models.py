@@ -1,8 +1,6 @@
 # coding=UTF-8
 from py2neo import Graph, Node, Relationship
 from passlib.hash import bcrypt
-from datetime import datetime
-import uuid
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
