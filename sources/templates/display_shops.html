@@ -1,0 +1,5 @@
+ {% for row in shops %}
+ <p>{{ row.s.name }} <a href="{{ url_for('move_to_adding_page', shop=row.s.name) }}"><img src="https://icon-library.net/images/add-icon/add-icon-16.jpg" id="addicon" /></a></p>
+  {% else %}
+  <p>Nie dodano jeszcze żadnych sklepów!</p>
+  {% endfor %}

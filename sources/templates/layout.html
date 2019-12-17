@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<title>Świat zakupów</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<header>
+  <div id="header">
+		<a href="{{ url_for('index') }}" id="title">Świat zakupów</a>
+        <nav id="menu">
+			<a href="{{ url_for('index') }}" class="menu-item">Strona główna   </a>
+		    {% if not session.username %}
+            <a href="{{ url_for('register') }}" class="menu-item">|  Załóż konto   </a>
+            <a href="{{ url_for('login') }}" class="menu-item">|   Zaloguj       </a>
+            {% else %}
+            <a href="{{ url_for('profile', username=session.username) }}" class="menu-item">|   Profil   </a>
+            <a href="{{ url_for('logout') }}" class="menu-item">|  Wyloguj       </a>
+            {% endif %}
+            {% if session.username %}
+            <a class="user">   zalogowany jako: {{ session.username }} </a>
+            {% endif %}
+		</nav>
+    </div>
+	</header>
+<div>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block body %}{% endblock %}
+</div>

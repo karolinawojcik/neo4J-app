@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="content">
+  <h2>Załóż konto</h2>
+	<form action="{{ url_for('.register') }}" method="post">
+            <p>Nazwa użytkownika:</p>
+            <input type="text" name="username"><br>
+            <p>Imię:</p>
+            <input type="text" name="name"><br>
+            <p>Nazwisko:</p>
+            <input type="text" name="surname"><br>
+            <p>Wiek:</p>
+            <input type="text" name="age"><br>
+            <p>Hasło:</p>
+            <input type="password" name="password"><br><br>
+        <input type="submit" value="Zarejestruj" class="prz">
+	</form>
+</div>
+{% endblock %}

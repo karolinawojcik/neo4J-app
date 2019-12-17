@@ -1,0 +1,174 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+body {
+	background-image: url(https://st2.depositphotos.com/2485347/8807/v/950/depositphotos_88074024-stock-illustration-shopping-pattern-background.jpg);
+	background-size: cover;
+}
+.content {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+	padding: 10px;
+	font-family: "Century Gothic";
+	border: solid 2px #008AFF;
+	background-color: #f2f2f2;
+	align: center;
+	box-shadow: 0px 1px 10px 3px black;
+}
+
+#header{
+	width: auto;
+	padding: 1% 1% 1% 2%;
+	background-color: #008AFF;
+	box-shadow: 1px 3px 8px 1px lightgrey;
+	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav{
+    display: flex;
+    list-style: none;
+}
+
+#title {
+	font-family: "Open Sans", "Segoe UI";
+	font-size: 150%;
+	font-weight: lighter;
+	color: white;
+	text-decoration: none;
+	float: left;
+	margin-top: -0.5%;
+}
+
+h2 {
+	font-family: "Open Sans", "Segoe UI";
+	font-size: 200%;
+	font-weight: bold;
+	color: #008AFF;
+	text-decoration: none;
+	float: center;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Open Sans", "Segoe UI";
+	font-size: 150%;
+	font-weight: lighter;
+	color: #005fb3;
+	text-decoration: none;
+	float: center;
+	text-align: center;
+}
+
+.menu-item{
+	color: white;
+	font-family: "Open Sans", "Segoe UI";
+	font-weight: lighter;
+	text-decoration: none;
+	font-size: 100%;
+}
+.user{
+    color: #f2f2f2;
+	font-family: "Open Sans", "Segoe UI";
+	font-weight: lighter;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.menu-item:hover{
+	text-decoration: underline;
+}
+
+a {
+	font-family: "Open Sans", "Segoe UI";
+	margin:0;
+  	padding:0;
+  	list-style-type:none;
+  	float: center;
+	text-align: center;
+	font-size: 60%;
+}
+p{
+    font-family: "Open Sans", "Segoe UI";
+    text-align: center;
+	font-size: 100%;
+	font-weight: lighter;
+}
+form{
+	font-family: "Open Sans", "Segoe UI";
+	font-size: 100%;
+	float: center;
+	text-align: center;
+}
+
+form p{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	float: center;
+	text-align: center;
+}
+
+.prz{
+  display: inline-block;
+  padding: 6px 6px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 3px #999;
+}
+.label{
+    font-size: 150%;
+	font-weight: lighter;
+	color: #005fb3;
+}
+.prz:hover {background-color: #3e8e41}
+
+.prz:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.flash{
+    background: #66b3ff;
+    padding: 0.5em;
+    border: 1px solid #0073e6;
+    color: white;
+    font-family: "Open Sans";
+}
+.error{
+    background: #f0d6d6;
+    padding: 0.5em;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  font-family: "Open Sans", "Segoe UI";
+  font-size: 100%;
+  color: #1a1a1a;
+}
+#addicon{
+    width: 42px;
+    height: 18px;
+}
+
+.results{
+  font-family: "Open Sans", "Segoe UI";
+  font-size: 150%;
+  color: #005fb3;
+  font-weight: bold;
+}
+

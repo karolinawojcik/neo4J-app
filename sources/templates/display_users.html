@@ -1,0 +1,23 @@
+     <form action="{{ url_for('search') }}" method="post">
+         <p>Wyszukaj
+             <select name="usertype">
+                 <option value="PRACOWNICY"> pracowników </option>
+                 <option value="KLIENCI"> klientów </option>
+             </select>
+              sklepu
+             </p>
+         <select name="shopname">
+           {% for row in shops %}
+           <option value={{ row.s.name }}>{{ row.s.name }}</option>
+           {% endfor %}
+         </select>
+         <input class="prz" type="submit" value="Szukaj">
+     </form>
+      <p/>
+      {% if users %}
+      <p class="results">{{ usertype }} sklepu {{ shopname }}:</p>
+        <p class="label">Imię i nazwisko, wiek</p>
+            {% for row in users %}
+          <p><strong>{{ row.u.name }} {{ row.u.surname }},</strong>  {{ row.u.age }}</p>
+      {% endfor %}
+      {% endif %}

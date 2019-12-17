@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="content">
+<h2>Strona główna</h2>
+  {% if session.username %}
+    <h3>Dodaj sklep</h3>
+    <form action="{{ url_for('add_shop') }}" method="post">
+            <p>Nazwa sklepu
+            <input type="text" size="30" name="shopname">
+            <input type="checkbox" name="work"> Pracuję w tym sklepie
+            <input type="checkbox" name="buy"> Kupuję w tym sklepie
+                <input type="submit" value="Dodaj" class="prz"></p><br>
+    </form>
+    <br>
+  {% endif %}
+
+
+    <div class="center">
+        <h3>Lista sklepów</h3>
+{% include "display_shops.html" %}
+<br>
+{% include "display_users.html" %}
+        </div>
+</div>
+{% endblock %}
