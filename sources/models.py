@@ -1,11 +1,11 @@
 # coding=UTF-8
 from py2neo import Graph, Node, Relationship
 from passlib.hash import bcrypt
-# import sys
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
+import os
 
-graph = Graph()
+url = os.environ.get("GRAPHENEDB_URL", "http://localhost:7474")
+
+graph = Graph(url + "/db/data/")
 
 class User:
 
