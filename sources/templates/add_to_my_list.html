@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
+<div class="content">
 <h3>Dodaj sklep do mojej listy</h3>
 <form action="{{ url_for('add_to_my_list', shop=shop) }}" method="post">
         <dl>
@@ -9,4 +10,5 @@
         </dl>
         <input type="submit" value="Dodaj" class="prz">
     </form>
+    </div>
 {% endblock %}
